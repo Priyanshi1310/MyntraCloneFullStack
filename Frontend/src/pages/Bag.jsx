@@ -181,9 +181,10 @@ import ItemBag from "../components/ItemBag";
 import { useSelector, useDispatch } from "react-redux";
 import { setTotalQuantity } from "../redux/products/productSlice";
 import { Link } from "react-router-dom";
+import { BASE_URL } from "../config";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api"; // Update this if your backend is different
+const API_URL = `${BASE_URL}`; // Update this if your backend is different
 
 const Bag = () => {
   const [bagItems, setBagItems] = useState([]);

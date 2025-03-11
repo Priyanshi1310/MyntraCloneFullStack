@@ -1,8 +1,9 @@
 // src/redux/userSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import { BASE_URL } from "../config";
 
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = `${BASE_URL}/auth`;
 
 // Async function to check user authentication status
 export const checkAuthStatus = createAsyncThunk("user/checkAuthStatus", async (_, { rejectWithValue }) => {

@@ -1,7 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { BASE_URL } from "../config";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/wishlist";
+const API_URL = `${BASE_URL}/wishlist`;
 
 export const fetchWishlist = createAsyncThunk("wishlist/fetchWishlist", async (userId) => {
   const response = await axios.get(`${API_URL}/${userId}`);

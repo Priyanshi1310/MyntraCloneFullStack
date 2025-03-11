@@ -243,9 +243,10 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import { BASE_URL } from "../config";
 import { fetchWishlist } from "../redux/wishlist/wishlistSlice";
 
-const API_URL = "http://localhost:5000/api"; // Change this to match your backend URL
+const API_URL = `${BASE_URL}`; // Change this to match your backend URL
 
 const SeparateProduct = () => {
   // Get product ID from URL params

@@ -109,9 +109,9 @@
 import React, { useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import axios from "axios"; // Import axios for API requests
-//import { API_URL } from "../config"; // Ensure API_URL is set
+import { BASE_URL } from "../config"; // Ensure API_URL is set
 
-const API_URL = "http://localhost:5000/api"; // Change this to match your backend URL
+const API_URL = `${BASE_URL}`; // Change this to match your backend URL
 
 const ItemBag = ({ item, userId, onQuantityChange, onRemove }) => {
   const [quantity, setQuantity] = useState(item.quantity); // Track item quantity

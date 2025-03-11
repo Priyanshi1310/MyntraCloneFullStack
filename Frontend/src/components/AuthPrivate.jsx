@@ -45,6 +45,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Outlet, Navigate } from "react-router-dom";
 import axios from "axios";
 import { loginUser } from "../redux/user/userSlice";
+import { BASE_URL } from '../../config';
 
 const AuthPrivateRoute = () => {
   const { currentUser } = useSelector((state) => state.user);
@@ -60,7 +61,7 @@ const AuthPrivateRoute = () => {
           return;
         }
         
-        const response = await axios.get("http://localhost:5000/api/auth/current", {
+        const response = await axios.get(`${BASE_URL}/auth/current`, {
           withCredentials: true,
           headers: {
             Authorization: `Bearer ${token}`

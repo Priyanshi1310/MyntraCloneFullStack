@@ -92,8 +92,9 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import axios from "axios"; // Import Axios
 import { selectCategory } from "../redux/products/productSlice";
+import { BASE_URL } from "../config";
 
-const API_URL = "http://localhost:5000/api"; // Update if needed
+const API_URL = `${BASE_URL}`; // Update if needed
 
 const ShopByCategory = () => {
   const dispatch = useDispatch();
