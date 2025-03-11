@@ -91,7 +91,7 @@
 // export default productSlice.reducer;
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../../config";
 import axios from "axios";
 
 const API_URL = `${BASE_URL}`;

@@ -1,7 +1,7 @@
 // src/redux/userSlice.js
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../../config";
 
 const API_URL = `${BASE_URL}/auth`;
 
