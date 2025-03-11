@@ -94,7 +94,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { BASE_URL } from "../../config";
 import axios from "axios";
 
-const API_URL = `${BASE_URL}`;
+const API_URL = `${BASE_URL}/products`;
 
 // **Async Thunk to Fetch Products from MongoDB**
 export const fetchProducts = createAsyncThunk(
