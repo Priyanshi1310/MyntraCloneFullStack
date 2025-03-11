@@ -45,7 +45,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Outlet, Navigate } from "react-router-dom";
 import axios from "axios";
 import { loginUser } from "../redux/user/userSlice";
-import { BASE_URL } from '../../config';
+import { BASE_URL } from '../config';
 
 const AuthPrivateRoute = () => {
   const { currentUser } = useSelector((state) => state.user);
