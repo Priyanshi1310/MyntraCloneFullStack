@@ -27,7 +27,7 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://myntraclonefullstack-ui.onrender.com/api",
+  "https://myntraclonefullstack-ui.onrender.com",
 ];
 
 app.use(
@@ -43,7 +43,7 @@ app.options("*", cors());
 
 // Explicitly set CORS headers for all responses
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://myntraclonefullstack-ui.onrender.com/api");
+  res.header("Access-Control-Allow-Origin", "https://myntraclonefullstack-ui.onrender.com");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type, Authorization");
   res.header("Access-Control-Allow-Credentials", "true");
