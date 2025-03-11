@@ -24,8 +24,14 @@ app.use(express.json());
 //       credentials: true, // Allow cookies and authentication headers
 //     })
 //   );
+app.use(cors({
+  origin: "http://localhost:3000" || "https://myntraclonefullstack-ui.onrender.com",  // ✅ Allow only frontend URL
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true, // ✅ Allow cookies & Authorization headers
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-app.use(cors());
+//app.use(cors());
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
