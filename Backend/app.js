@@ -27,7 +27,7 @@ app.use(express.json());
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://myntraclonefullstack-ui.onrender.com",
+  "https://myntraclonefullstack-ui.onrender.com/api",
 ];
 
 app.use(
