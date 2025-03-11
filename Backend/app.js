@@ -39,7 +39,7 @@ app.use(
   })
 );
 
-//app.use(cors());
+app.options("*", cors());
 
 // Connect to MongoDB
 mongoose
