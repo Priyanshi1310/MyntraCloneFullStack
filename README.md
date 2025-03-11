@@ -33,7 +33,7 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/your-username/myntra-clone.git
+   git clone https://github.com/Priyanshi1310/MyntraCloneFullStack.git
    cd myntra-clone
    ```
 
