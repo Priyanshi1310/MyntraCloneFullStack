@@ -32,9 +32,9 @@ const allowedOrigins = [
 
 app.use(
   cors({
-    origin: allowedOrigins, // ✅ Allow only frontend URL
+    origin: allowedOrigins, 
     methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true, // ✅ Allow cookies & Authorization headers
+    credentials: true, 
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
@@ -44,8 +44,8 @@ app.options("*", cors());
 // Connect to MongoDB
 mongoose
   .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
   })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.log(err));
