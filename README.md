@@ -1,6 +1,6 @@
 # Myntra Clone
 
-This is a fully functional e-commerce web application clone of Myntra, built using React. The project mimics the core features of Myntra, including product listing, filtering, detailed product view, and cart functionality.
+This is a fully functional e-commerce web application clone of Myntra, built using MERN Stack. The project mimics the core features of Myntra, including product listing, filtering, detailed product view, and cart functionality.
 
 
 ## Features
@@ -22,6 +22,11 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 - **React Slick**: Carousel component for React.
 - **Redux**: Predictable state container for JavaScript apps.
 - **Redux Persist**: Persist and rehydrate a Redux store.
+- **Node.js**: A JavaScript runtime environment.
+- **Express.js**: A web application framework for Node.js.
+- **MongoDB**: A NoSQL database used for storing subscriber data.
+- **Mongoose**: An Object Data Modeling (ODM) library for MongoDB and Node.js.
+- **Nodemon**: A utility that automatically restarts the server when changes are detected.
 
 ## Installation
 
