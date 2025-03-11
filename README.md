@@ -40,13 +40,23 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 2. **Install dependencies**
 
    ```sh
+   cd Frontend
    npm install
+   ```
+   ```sh
+   cd Backend
+   npm intsall
    ```
 
 3. **Start the application**
 
    ```sh
+   cd Frontend
    npm start
+   ```
+   ```sh
+   cd Backend
+   nodemon app.js
    ```
 
 ## Usage
