@@ -15,7 +15,6 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 ## Technologies Used
 
 - **React**: JavaScript library for building user interfaces.
-- **Firebase**: Backend-as-a-Service for authentication and database.
 - **TailwindCSS**: Utility-first CSS framework for styling.
 - **React Icons**: Collection of popular icons for React projects.
 - **React Redux**: Official React bindings for Redux.
@@ -23,8 +22,6 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 - **React Slick**: Carousel component for React.
 - **Redux**: Predictable state container for JavaScript apps.
 - **Redux Persist**: Persist and rehydrate a Redux store.
-- **Slick Carousel**: Carousel/slider library.
-- **FakeStore API**: Free API for testing and prototyping e-commerce applications.
 
 ## Installation
 
@@ -54,7 +51,3 @@ This is a fully functional e-commerce web application clone of Myntra, built usi
 - **Product Page**: Click on a product to view detailed information.
 - **Cart**: Add products to the cart and view them.
 - **Authentication**: Sign up or log in to manage your cart.
-
-## API
-
-This project uses the [FakeStore API](https://fakestoreapi.com/products) for fetching product data. No API key is required.
